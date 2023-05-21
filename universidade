@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width" initial-scale="1.0">
+    <title>A Universidade</title>
+    
+    <style>
+        body {
+            font-family:;
+            background-color: ;
+        }
+        h1 {
+            color: ;
+            font-family: ;
+            font-size: ;   
+        }
+        p {
+            font-family: ;
+            background-color: ;
+            font-size: ;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>A Universidade</h1>
+    <p>Texto sobre a universidade e sobre os cursos que os integrantes cursam nela aqui
+
+    </p>
+</body>
+</html>
