@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exibir Localização</title>
+    <!-- Inclua os arquivos CSS e JavaScript da biblioteca Leaflet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <div id="map" style="height: 400px;"></div>
+
+    <script>
+        // Inicialize o mapa Leaflet
+        var map = L.map('map').setView([-22.9068, -43.1729], 1);
+
+        // Adicione um tile layer (por exemplo, OpenStreetMap) ao mapa
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+            maxZoom: 18
+        }).addTo(map);
+
+        // Adicione os marcadores para cada localização
+        {% for localizacao in localizacoes %}
+            var marker = L.marker([{{ localizacao.latitude }}, {{ localizacao.longitude }}]).addTo(map);
+            marker.bindPopup("{{ localizacao.nome }}");
+        {% endfor %}
+    </script>
+</body>
+</html>
