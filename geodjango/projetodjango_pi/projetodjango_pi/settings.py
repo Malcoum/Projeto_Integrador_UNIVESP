@@ -58,7 +58,7 @@ ROOT_URLCONF = 'projetodjango_pi.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR, 'templates/pi2023'],
+        'DIRS': [BASE_DIR, 'pi2023/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
