@@ -1,0 +1,29 @@
+'projeto-integrador' = ambiente virtual
+
+'projetodjango_pi = projeto django
+
+'pi2023' = app
+
+'projetodjango_pi' = projeto
+
+'templates' = para salvar os html. Todos os html inseridos nessa pasta precisam de configuração nos arquivos url, view e model.
+
+
+ATIVAR O FRAMEWORK
+
+1- Criar o ambiente virtual:
+python -m venv nome_do_ambiente
+
+2- Ativar o ambiente virtual:
+projeto_integrador\Scripts\activate
+
+3- Instalar Django, PostGIS etc:
+pip install django
+pip install psycopg psycopg2
+pip install django-leaflet
+
+4- Criar o projeto (pode ser dentro do diretório do ambiente virtual ou fora):
+django-admin startproject nome_do_projeto
+
+
+
