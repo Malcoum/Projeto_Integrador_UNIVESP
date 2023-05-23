@@ -1,15 +1,17 @@
+INSTRUÇÕES PARA CONFIGURAR UM AMBIENTE VIRTUAL E INSTALAR DJANGO E DEPENDÊNCIAS
+*no prompt de comando
+
+
+1- NOME E TIPO DAS PASTAS:
+
 'projeto-integrador' = ambiente virtual
-
 'projetodjango_pi = projeto django
-
 'pi2023' = app
-
 'projetodjango_pi' = projeto
+'templates' = para salvar os html, essa pasta fica dentro da pasta 'pi2023'. Todos os html inseridos nessa pasta precisam de configuração nos arquivos view e model.
 
-'templates' = para salvar os html. Todos os html inseridos nessa pasta precisam de configuração nos arquivos url, view e model.
 
-
-ATIVAR O FRAMEWORK
+CRIAR O FRAMEWORK
 
 1- Criar o ambiente virtual:
 python -m venv nome_do_ambiente
@@ -25,5 +27,9 @@ pip install django-leaflet
 4- Criar o projeto (pode ser dentro do diretório do ambiente virtual ou fora):
 django-admin startproject nome_do_projeto
 
+5- Aplicar alterações feitas no models.py no BD (a partir do diretório onde consta o arquivo manage.py):
+python manage.py makemigrations
+python manage.py migrate
 
-
+6- Iniciar o servidor:
+python manage.py runserver
