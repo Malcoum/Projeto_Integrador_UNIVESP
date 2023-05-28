@@ -8,27 +8,49 @@
     
     <style>
         body {
-            font-family:;
-            background-color: ;
+            font-family:Arial, Arial, Helvetica, sans-serif;
+            background-color: aliceblue;
         }
         h1 {
-            color: ;
-            font-family: ;
-            font-size: ;   
+            color:black ;
+            font-family: Arial, Arial, Helvetica, sans-serif ;
+            font-size: 32px ;   
         }
         p {
-            font-family: ;
-            background-color: ;
-            font-size: ;
+            font-family:Arial, Arial, Helvetica, sans-serif ;
+            background-color: aliceblue;
+            font: size 10px; ;
             text-align: center;
         }
     </style>
 </head>
 
 <body>
+    <section>
     <h1>A Universidade</h1>
-    <p>Texto sobre a universidade e sobre os cursos que os integrantes cursam nela aqui
+    <p> A Universidade Virtual do Estado de São Paulo (UNIVESP) foi criada em 2012 e é exclusivamente voltada para a Educação à Distância (EAD). 
+	Atualmente, a metodologia de ingresso é através do vestibula para os seguintes cursos: </p>
+	
+	<ul>
+	<li>Engenharia de Computação</li>
+	<li>Engenharia de Produção</li>
+	<li>Licenciatura em Biologia</li>
+	<li>Licenciatura em Física</li>
+	<li>Licenciatura em Matemática</li>
+	<li>Licenciatura em Química</li>
+	<li>Pedagogia</li>
+	<li>Letras-Habilitação em Língua Portuguesa</li>
+	<li>Bacherelado em Tecnologia da Informação</li>
+	<li>Bacherelado em Ciência de Dados</li>
+	<li>Bacherelado em Administração</li>
+	<li>Tecnologia em Processos Gerenciais</li>
+	</ul>
+	
+    </section>
+	<p> Para mais informações acesse: <a href="https://univesp.br/">univesp.br</a></p>
+    <section>
+	</section>
 
-    </p>
 </body>
+</html>
 </html>
