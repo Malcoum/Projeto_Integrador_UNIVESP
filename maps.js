@@ -46,27 +46,27 @@ fetch(url2)
 		}
 	}).addTo(map) 
 });
-let url="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson";
-fetch(url)
-.then(function(response) {
-	return response.json()
-})
-.then(function(data) {
-	L.geoJSON(data, {
-		pointToLayer: function (feature, latlng) {
-    return L.circleMarker(latlng, 
-			    {radius:10,
-			    color:'purple',
-			    opacity:0.5});
-		},
-		onEachFeature: function (feature, layer) {
-			layer.bindPopup( "Place: " + feature.properties.place + "<br>"
-				+ " Type: " + feature.properties.type + "<br>"
-				+ " Title: " + feature.properties.title);
-		}
+// let url="https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson";
+// fetch(url)
+// .then(function(response) {
+// 	return response.json()
+// })
+// .then(function(data) {
+// 	L.geoJSON(data, {
+// 		pointToLayer: function (feature, latlng) {
+//     return L.circleMarker(latlng, 
+// 			    {radius:10,
+// 			    color:'purple',
+// 			    opacity:0.5});
+// 		},
+// 		onEachFeature: function (feature, layer) {
+// 			layer.bindPopup( "Place: " + feature.properties.place + "<br>"
+// 				+ " Type: " + feature.properties.type + "<br>"
+// 				+ " Title: " + feature.properties.title);
+// 		}
 
-	}).addTo(map)
-});
+// 	}).addTo(map)
+// });
 
 let h2 = document.querySelector('h2');
 	
